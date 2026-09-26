@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interview Integrity Report</title>
+  <style>
+    :root { color-scheme: light; --ink: #172033; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f1f5f9; color: var(--ink); font: 15px/1.5 Arial, sans-serif; }
+    main { max-width: 980px; margin: 40px auto; padding: 0 20px 40px; }
+    header { padding: 30px; background: #14233b; border-radius: 18px; color: white; }
+    header p { margin: 8px 0 0; color: #cbd5e1; }
+    h1 { margin: 0; font-size: 30px; }
+    h2 { margin: 0 0 16px; font-size: 19px; }
+    section { margin-top: 22px; padding: 24px; background: white; border: 1px solid var(--line); border-radius: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .card { padding: 18px; background: #f8fafc; border: 1px solid var(--line); border-radius: 12px; }
+    .label { color: var(--muted); font-size: 13px; }
+    .value { display: block; margin-top: 4px; font-size: 25px; font-weight: 700; }
+    .counts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .count { padding: 13px 15px; border-radius: 10px; background: #eff6ff; }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th, td { padding: 12px 10px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+    .empty { color: var(--muted); text-align: center; }
+    .note { color: var(--muted); font-size: 13px; }
+    footer { margin-top: 20px; color: var(--muted); font-size: 13px; text-align: center; }
+    @media (max-width: 600px) { main { margin-top: 18px; padding: 0 12px 24px; } section { padding: 17px; overflow-x: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Interview Integrity Report</h1>
+      <p>Behavioral attention signals for transparent human review</p>
+      <p>Session started: 2026-09-26 14:59:03</p>
+    </header>
+    <section>
+      <h2>Session Summary</h2>
+      <div class="cards">
+        <div class="card"><span class="label">Session duration</span><span class="value">00:16</span></div>
+        <div class="card"><span class="label">Approximately on-screen</span><span class="value">100.0%</span></div>
+        <div class="card"><span class="label">Attention diverted</span><span class="value">0.0%</span></div>
+        <div class="card"><span class="label">Longest diversion</span><span class="value">0.0 s</span></div>
+      </div>
+      <p class="note">Percentages are calculated from total session duration. Face-not-detected time is reported separately; overlapping head and gaze signals count once toward attention-diverted time.</p>
+    </section>
+    <section>
+      <h2>Behavioral Event Counts</h2>
+      <div class="counts">
+        <div class="count">Head Direction Diverted: <strong>0</strong></div>
+        <div class="count">Gaze Diverted: <strong>0</strong></div>
+        <div class="count">Face Not Detected: <strong>0</strong></div>
+      </div>
+    </section>
+    <section>
+      <h2>Event Timeline</h2>
+      <table>
+        <thead><tr><th>Start</th><th>End</th><th>Behavioral attention signal</th><th>Duration</th></tr></thead>
+        <tbody><tr><td colspan="4" class="empty">No confirmed events recorded.</td></tr></tbody>
+      </table>
+    </section>
+    <footer>Approximate behavioral observations only; not a determination of misconduct.</footer>
+  </main>
+</body>
+</html>
